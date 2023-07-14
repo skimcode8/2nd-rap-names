@@ -6,7 +6,7 @@ const rappers = {
     '21 savage':{
         'birthName': 'Sheyaa',
         'birthLocation': 'London',
-        'age': 29
+        'age': 22
     },
 
     'chance the rapper':{
