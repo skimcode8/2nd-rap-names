@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const PORT = 8000
-const cors = require('cors');
+
 
 
 
@@ -26,13 +26,7 @@ const rappers = {
     
 }
 
-app.use(
-    cors({
-      origin: 'http://127.0.0.1:5500/client-side-code/index.html',
-      methods: 'GET,POST,PUT,DELETE',
-      credentials: true,
-    })
-  );
+
 
 app.get('/', (request, response) =>{
     response.sendFile(__dirname + '/index.html')
