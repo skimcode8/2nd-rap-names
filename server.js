@@ -1,10 +1,13 @@
 const express = require('express')
 const app = express()
 const PORT = 8000
-const cors = require('cors');
 
-app.use(cors({origin: '127.0.0.1:5500/client-side-code/index.html'}))
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+    next();
+  });
+  
 
 const rappers = {
     '21 savage':{
